@@ -1,17 +1,11 @@
 import React from 'react';
-import {TouchableOpacity, Image} from 'react-native';
+import {TouchableOpacity} from 'react-native';
 import PropTypes from 'prop-types';
-import styles from './styles';
-import Icons from 'Theme/Icons/index';
+import Entypo from 'react-native-vector-icons/Entypo';
+import {wp} from 'Helpers/Responsive';
 
-const LeftIcon = ({
-  iconSource,
-  navigation,
-  isHamburger,
-  onPress = () => {},
-}) => (
+const LeftIcon = ({iconName, navigation, isHamburger, onPress = () => {}}) => (
   <TouchableOpacity
-    style={styles.touchableArea}
     onPress={() => {
       if (isHamburger) {
         navigation.toggleDrawer();
@@ -33,19 +27,18 @@ const LeftIcon = ({
         }
       }
     }}>
-    <Image source={iconSource} style={styles.icon} />
+    <Entypo name={iconName} size={wp(7)} color="black" />
   </TouchableOpacity>
 );
 
 LeftIcon.propTypes = {
   navigation: PropTypes.object.isRequired,
-  iconSource: PropTypes.number.isRequired,
+  iconName: PropTypes.string.isRequired,
   isHamburger: PropTypes.bool,
 };
 
 LeftIcon.defaultProps = {
   isHamburger: false,
-  iconSource: Icons.Back,
 };
 
 export default LeftIcon;

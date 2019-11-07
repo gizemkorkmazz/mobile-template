@@ -1,0 +1,10 @@
+const ScreenNames = {
+  HOME: 'HOME',
+  HOME_NAVIGATOR: 'HOME_NAVIGATOR',
+  LOGIN: 'LOGIN',
+  LOGIN_NAVIGATOR: 'LOGIN_NAVIGATOR',
+  WITH_USERNAME: 'WITH_USERNAME',
+  REGISTRY: 'REGISTRY',
+};
+
+export default ScreenNames;
