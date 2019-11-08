@@ -5,7 +5,7 @@ import Colors from 'Themes/Colors';
 import Entypo from 'react-native-vector-icons/Entypo';
 import {wp} from 'Helpers/Responsive';
 
-const TextInput = ({
+const Bordered = ({
   title,
   placeholder,
   isSecureText,
@@ -17,17 +17,23 @@ const TextInput = ({
   <>
     <Text style={styles.title}>{title}</Text>
     <View style={styles.body}>
-      {iconName && <Entypo name={iconName} size={wp(5)} color="black" />}
+      {iconName && (
+        <Entypo
+          name={iconName}
+          size={wp(5)}
+          color={Colors.themes.pastel.quaternary}
+        />
+      )}
       <RnTextInput
         autoCapitalize={autoCapitalize}
         secureTextEntry={isSecureText}
         keyboardType={keyboardType || 'default'}
         style={[styles.textInput, textInputContainerStyle]}
-        placeholderTextColor={Colors.base.secondary}
+        placeholderTextColor={Colors.white}
         placeholder={placeholder}
       />
     </View>
   </>
 );
 
-export default TextInput;
+export default Bordered;

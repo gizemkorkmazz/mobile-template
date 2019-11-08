@@ -14,6 +14,7 @@ const Border = {
   radius: {
     card: wp(2),
     circular: wp(30),
+    button: wp(1.5),
   },
   width: wp(0.3),
 };

@@ -2,9 +2,9 @@ import {createStackNavigator} from 'react-navigation-stack';
 import Login from 'Screens/Login/Login';
 import NavigationBar from 'Components/StackNavigation/NavigationBar';
 import React from 'react';
-import WithUsername from 'Screens/Login/WithUsername';
+import WithBackground from 'Screens/Login/WithBackground';
 import ScreenNames from 'Constants/ScreenNames/index';
-import Registry from 'Screens/Login/Registry';
+import WithLogo from 'Screens/Login/WithLogo';
 
 const LoginStackNavigator = createStackNavigator(
   {
@@ -14,14 +14,14 @@ const LoginStackNavigator = createStackNavigator(
         title: 'Login',
       },
     },
-    [ScreenNames.WITH_USERNAME]: {
-      screen: WithUsername,
+    [ScreenNames.WITH_BACKGROUND]: {
+      screen: WithBackground,
       navigationOptions: {
         title: 'Login',
       },
     },
-    [ScreenNames.REGISTRY]: {
-      screen: Registry,
+    [ScreenNames.WITH_LOGO]: {
+      screen: WithLogo,
       navigationOptions: {
         title: 'Login',
       },

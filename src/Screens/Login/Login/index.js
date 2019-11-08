@@ -10,19 +10,19 @@ const Login = ({navigation}) => {
       <Circular
         style={styles.button}
         onPress={() => {
-          navigation.navigate(ScreenNames.WITH_USERNAME);
+          navigation.navigate(ScreenNames.WITH_BACKGROUND);
         }}
         renderItem={() => {
-          return <Text>KULLANICI ADI İLE</Text>;
+          return <Text>ARKA PLAN RESMİ İLE</Text>;
         }}
       />
       <Circular
         style={styles.button}
         onPress={() => {
-          navigation.navigate(ScreenNames.REGISTRY);
+          navigation.navigate(ScreenNames.WITH_LOGO);
         }}
         renderItem={() => {
-          return <Text>SİCİL NO İLE</Text>;
+          return <Text>LOGO İLE</Text>;
         }}
       />
       <Circular

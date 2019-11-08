@@ -11,6 +11,7 @@ const styles = StyleSheet.create({
     borderRadius: Border.radius.circular,
     borderColor: Colors.border,
     padding: wp(4),
+    backgroundColor: Colors.background.transparent,
   },
   icon: {
     height: wp(5),
@@ -22,11 +23,13 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: wp(3),
     fontSize: FontSizeDict.font12,
+    color: Colors.white,
   },
   title: {
     fontSize: FontSizeDict.font15,
     padding: wp(3),
-    marginTop: wp(5),
+    marginTop: wp(2),
+    color: Colors.white,
   },
 });
 
