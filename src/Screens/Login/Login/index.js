@@ -27,9 +27,11 @@ const Login = ({navigation}) => {
       />
       <Circular
         style={styles.button}
-        onPress={() => {}}
+        onPress={() => {
+          navigation.navigate(ScreenNames.WITH_PROFILE_IMAGE);
+        }}
         renderItem={() => {
-          return <Text>LOGIN 3</Text>;
+          return <Text>PROFİL FOTOĞRAFI İLE</Text>;
         }}
       />
     </View>

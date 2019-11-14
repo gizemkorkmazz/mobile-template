@@ -1,19 +1,13 @@
 import {StyleSheet} from 'react-native';
 import {Paddings} from 'Themes/Metrics';
-import {wp} from 'Helpers/Responsive';
+import Colors from 'Themes/Colors';
 
 const styles = StyleSheet.create({
   container: {
+    backgroundColor: Colors.background.secondary,
     padding: Paddings.PagePadding,
-  },
-  image: {
-    width: wp(50),
-    height: wp(40),
-    resizeMode: 'contain',
-    alignSelf: 'center',
-  },
-  footer: {
-    marginTop: wp(8),
+    flex: 1,
+    paddingTop: Paddings.Top,
   },
 });
 export default styles;

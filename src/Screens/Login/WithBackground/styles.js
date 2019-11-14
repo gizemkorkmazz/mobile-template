@@ -6,17 +6,18 @@ import Colors from 'Themes/Colors';
 const styles = StyleSheet.create({
   contentContainer: {
     padding: Paddings.PagePadding,
+    paddingTop: Paddings.Top,
   },
   container: {
     flex: 1,
   },
   button: {
     marginTop: wp(5),
-    backgroundColor: Colors.background.transparent,
+    backgroundColor: Colors.button.primary,
   },
   text: {
     fontSize: FontSizeDict.font13,
-    color: Colors.white,
+    color: Colors.black,
   },
   footer: {
     justifyContent: 'flex-end',

@@ -19,6 +19,9 @@ const Colors = {
     bottomTab: '#525252',
     menu: '#8E8E8E',
   },
+  button: {
+    primary: '#c9d1d3',
+  },
   black: 'black',
   white: 'white',
   border: '#D3D3D3',

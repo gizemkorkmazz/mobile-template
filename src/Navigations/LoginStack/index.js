@@ -5,6 +5,7 @@ import React from 'react';
 import WithBackground from 'Screens/Login/WithBackground';
 import ScreenNames from 'Constants/ScreenNames/index';
 import WithLogo from 'Screens/Login/WithLogo';
+import WithProfileImage from 'Screens/Login/WithProfileImage';
 
 const LoginStackNavigator = createStackNavigator(
   {
@@ -17,13 +18,19 @@ const LoginStackNavigator = createStackNavigator(
     [ScreenNames.WITH_BACKGROUND]: {
       screen: WithBackground,
       navigationOptions: {
-        title: 'Login',
+        header: null,
       },
     },
     [ScreenNames.WITH_LOGO]: {
       screen: WithLogo,
       navigationOptions: {
-        title: 'Login',
+        header: null,
+      },
+    },
+    [ScreenNames.WITH_PROFILE_IMAGE]: {
+      screen: WithProfileImage,
+      navigationOptions: {
+        header: null,
       },
     },
   },

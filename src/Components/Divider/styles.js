@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
   },
   vertical: {
     width: 1,
-    height: wp('16'),
+    height: wp(13),
   },
 });
 

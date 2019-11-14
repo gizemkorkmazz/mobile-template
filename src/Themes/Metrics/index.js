@@ -5,6 +5,7 @@ const {width: Width, height: Height} = Dimensions.get('window');
 
 const Paddings = {
   PagePadding: wp(5),
+  Top: wp(15),
 };
 
 const Margins = {
