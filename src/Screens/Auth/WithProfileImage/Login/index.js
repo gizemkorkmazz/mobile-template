@@ -3,7 +3,7 @@ import {View} from 'react-native';
 import styles from './styles';
 import ProfileImageCard from 'Containers/Auth/ProfileImageCard';
 
-const WithProfileImage = () => {
+const WithProfileImageLogin = () => {
   return (
     <View style={styles.container}>
       <ProfileImageCard />
@@ -11,7 +11,7 @@ const WithProfileImage = () => {
   );
 };
 
-WithProfileImage.propTypes = {};
-WithProfileImage.defaultProps = {};
+WithProfileImageLogin.propTypes = {};
+WithProfileImageLogin.defaultProps = {};
 
-export default WithProfileImage;
+export default WithProfileImageLogin;

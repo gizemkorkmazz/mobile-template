@@ -1,10 +1,10 @@
 import {createDrawerNavigator} from 'react-navigation-drawer';
 import SideMenu from 'Containers/NavigationItems/SideMenu';
 import {wp} from 'Helpers/Responsive';
-import LoginStackNavigator from '../LoginStack';
 import {createAppContainer} from 'react-navigation';
 import HomeStackNavigator from '../HomeStack';
 import ScreenNames from 'Constants/ScreenNames';
+import AuthStackNavigator from '../AuthStack';
 
 const AppNavigator = createDrawerNavigator(
   {
@@ -15,9 +15,9 @@ const AppNavigator = createDrawerNavigator(
       },
     },
     [ScreenNames.LOGIN_NAVIGATOR]: {
-      screen: LoginStackNavigator,
+      screen: AuthStackNavigator,
       navigationOptions: {
-        drawerLabel: 'Login',
+        drawerLabel: 'Giriş Yap - Üye Ol - Şifremi Unuttum',
       },
     },
   },

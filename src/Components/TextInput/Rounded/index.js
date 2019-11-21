@@ -18,7 +18,14 @@ const Rounded = ({
   <>
     <Text style={styles.title}>{title}</Text>
     <View style={styles.body}>
-      {iconName && <Entypo name={iconName} size={wp(5)} color={Colors.white} style={styles.icon} />}
+      {iconName && (
+        <Entypo
+          name={iconName}
+          size={wp(5)}
+          color={Colors.white}
+          style={styles.icon}
+        />
+      )}
       <Divider type="vertical" backgroundColor={Colors.white} />
       <RnTextInput
         autoCapitalize={autoCapitalize}

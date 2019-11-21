@@ -10,7 +10,7 @@ const Login = ({navigation}) => {
       <Circular
         style={styles.button}
         onPress={() => {
-          navigation.navigate(ScreenNames.WITH_BACKGROUND);
+          navigation.navigate(ScreenNames.WITH_BACKGROUND_LOGIN);
         }}
         renderItem={() => {
           return <Text>ARKA PLAN RESMİ İLE</Text>;
@@ -19,7 +19,7 @@ const Login = ({navigation}) => {
       <Circular
         style={styles.button}
         onPress={() => {
-          navigation.navigate(ScreenNames.WITH_LOGO);
+          navigation.navigate(ScreenNames.WITH_LOGO_LOGIN);
         }}
         renderItem={() => {
           return <Text>LOGO İLE</Text>;
@@ -28,7 +28,7 @@ const Login = ({navigation}) => {
       <Circular
         style={styles.button}
         onPress={() => {
-          navigation.navigate(ScreenNames.WITH_PROFILE_IMAGE);
+          navigation.navigate(ScreenNames.WITH_PROFILE_IMAGE_LOGIN);
         }}
         renderItem={() => {
           return <Text>PROFİL FOTOĞRAFI İLE</Text>;

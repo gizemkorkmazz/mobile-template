@@ -7,8 +7,9 @@ import Images from 'Themes/Images';
 import Divider from 'Components/Divider';
 import Colors from 'Themes/Colors';
 import Rounded from 'Components/TextInput/Rounded';
+import ScreenNames from 'Constants/ScreenNames';
 
-const WithBackground = () => {
+const WithBackgroundLogin = ({navigation}) => {
   return (
     <ImageBackground style={styles.container} source={Images.LoginBackground}>
       <ScrollView contentContainerStyle={styles.contentContainer}>
@@ -29,19 +30,28 @@ const WithBackground = () => {
           />
           <Circular
             style={styles.button}
-            onPress={() => {}}
+            onPress={() => {
+              navigation.navigate(ScreenNames.WITH_BACKGROUND_REGISTER);
+            }}
             renderItem={() => {
               return <Text style={styles.text}>ÜYE OL</Text>;
             }}
           />
-          <Underline title="Şifremi Unuttum" onPress={() => {}} />
+          <Underline
+            title="Şifremi Unuttum"
+            onPress={() => {
+              navigation.navigate(
+                ScreenNames.WITH_BACKGROUND_SEND_CONFIRMATION,
+              );
+            }}
+          />
         </View>
       </ScrollView>
     </ImageBackground>
   );
 };
 
-WithBackground.propTypes = {};
-WithBackground.defaultProps = {};
+WithBackgroundLogin.propTypes = {};
+WithBackgroundLogin.defaultProps = {};
 
-export default WithBackground;
+export default WithBackgroundLogin;
