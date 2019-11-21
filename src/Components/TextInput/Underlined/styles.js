@@ -6,9 +6,7 @@ const styles = StyleSheet.create({
   container: {
     marginVertical: wp(4),
   },
-
   textInput: {
-    flex: 1,
     padding: wp(3),
     fontSize: FontSizeDict.font12,
     color: Colors.text.light.thirnary,
