@@ -6,6 +6,8 @@ import Colors from 'Themes/Colors';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  contentContainer: {
     padding: Paddings.PagePadding,
     paddingTop: Paddings.Top,
   },

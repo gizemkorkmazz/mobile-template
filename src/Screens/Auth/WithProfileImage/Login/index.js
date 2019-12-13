@@ -1,13 +1,60 @@
 import React from 'react';
-import {View} from 'react-native';
+import {Text, Image, View, ScrollView} from 'react-native';
 import styles from './styles';
-import ProfileImageCard from 'Containers/Auth/ProfileImageCard';
+import Images from 'Themes/Images';
+import Underlined from 'Components/TextInput/Underlined';
+import Circular from 'Components/Buttons/Circular';
+import ScreenNames from 'Constants/ScreenNames';
+import LinearGradient from 'react-native-linear-gradient';
+import Colors from 'Themes/Colors';
 
-const WithProfileImageLogin = () => {
+const WithProfileImageLogin = ({navigation}) => {
   return (
-    <View style={styles.container}>
-      <ProfileImageCard />
-    </View>
+    <LinearGradient
+      style={styles.container}
+      colors={[
+        Colors.linearGradient.primary,
+        Colors.linearGradient.secondary,
+        Colors.linearGradient.thirnary,
+        Colors.linearGradient.quaternary,
+      ]}>
+      <ScrollView contentContainerStyle={styles.content}>
+        <Image source={Images.ProfileImage} style={styles.image} />
+        <Underlined title="Telefon numaranızı girin" />
+        <Underlined isSecureText title="Şifrenizi girin" />
+        <View style={styles.footer}>
+          <Circular
+            style={styles.button}
+            onPress={() => {}}
+            renderItem={() => {
+              return (
+                <Text style={styles.text} onPress={() => {}}>
+                  GİRİŞ YAP
+                </Text>
+              );
+            }}
+          />
+          <Circular
+            style={styles.button}
+            onPress={() => {
+              navigation.navigate(ScreenNames.WITH_PROFILE_IMAGE_REGISTER);
+            }}
+            renderItem={() => {
+              return <Text style={styles.text}>ÜYE OL</Text>;
+            }}
+          />
+          <Text
+            style={styles.forgotPassword}
+            onPress={() => {
+              navigation.navigate(
+                ScreenNames.WITH_PROFILE_IMAGE_SEND_CONFIRMATION,
+              );
+            }}>
+            Şifrenizi mi unuttunuz ?
+          </Text>
+        </View>
+      </ScrollView>
+    </LinearGradient>
   );
 };
 

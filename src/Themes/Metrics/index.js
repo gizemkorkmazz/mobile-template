@@ -9,7 +9,7 @@ const Paddings = {
 };
 
 const Margins = {
-  Layout: wp(3),
+  top: wp(10),
 };
 const Border = {
   radius: {

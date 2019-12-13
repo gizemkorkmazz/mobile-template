@@ -22,10 +22,11 @@ const styles = StyleSheet.create({
     color: Colors.white,
   },
   title: {
-    fontSize: FontSizeDict.font15,
+    fontSize: FontSizeDict.font13,
     padding: wp(3),
     marginTop: wp(2),
-    color: Colors.white,
+    color: Colors.black,
+    fontWeight: 'bold',
   },
 });
 

@@ -1,9 +1,41 @@
 import React from 'react';
-import {View} from 'react-native';
+import {Image, Text, ScrollView} from 'react-native';
 import styles from './styles';
+import Images from 'Themes/Images';
+import Underlined from 'Components/TextInput/Underlined';
+import Circular from 'Components/Buttons/Circular';
+import LinearGradient from 'react-native-linear-gradient';
+import Colors from 'Themes/Colors';
 
-const WithProfileImageRegister = () => {
-  return <View />;
+const WithProfileImageRegister = ({navigation}) => {
+  return (
+    <LinearGradient
+      style={styles.container}
+      colors={[
+        Colors.linearGradient.primary,
+        Colors.linearGradient.secondary,
+        Colors.linearGradient.thirnary,
+        Colors.linearGradient.quaternary,
+      ]}>
+      <ScrollView contentContainerStyle={styles.content}>
+        <Image source={Images.BlankProfile} style={styles.image} />
+        <Underlined title="Telefon numarası" />
+        <Underlined title="Ad / Soyad" />
+        <Underlined title="E-Posta" />
+        <Underlined title="Şifre" />
+        <Underlined title="Şifre Tekrar" />
+        <Circular
+          style={styles.button}
+          onPress={() => {
+            navigation.goBack();
+          }}
+          renderItem={() => {
+            return <Text style={styles.text}>ÜYE OL</Text>;
+          }}
+        />
+      </ScrollView>
+    </LinearGradient>
+  );
 };
 
 WithProfileImageRegister.propTypes = {};

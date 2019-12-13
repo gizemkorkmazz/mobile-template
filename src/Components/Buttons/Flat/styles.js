@@ -10,7 +10,7 @@ const styles = StyleSheet.create({
     paddingVertical: wp(4),
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: wp(3),
+    marginTop: wp(5),
   },
 });
 

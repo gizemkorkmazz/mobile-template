@@ -5,6 +5,12 @@ const Colors = {
     thirnary: 'black',
     background: 'white',
   },
+  linearGradient: {
+    primary: '#f2f4d1',
+    secondary: '#b2d3be',
+    thirnary: '#89a3b2',
+    quaternary: '#393e46',
+  },
   background: {
     primary: 'white',
     secondary: '#ccc',

@@ -5,11 +5,12 @@ import {wp, FontSizeDict} from 'Helpers/Responsive';
 const styles = StyleSheet.create({
   text: {
     textDecorationLine: 'underline',
-    textDecorationColor: Colors.white,
-    color: Colors.white,
+    textDecorationColor: Colors.black,
+    color: Colors.black,
     textAlign: 'center',
     marginTop: wp(5),
-    fontSize: FontSizeDict.font16,
+    fontSize: FontSizeDict.font15,
+    fontWeight: 'bold',
   },
 });
 

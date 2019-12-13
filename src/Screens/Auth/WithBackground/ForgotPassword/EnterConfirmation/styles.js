@@ -1,22 +1,22 @@
 import {StyleSheet} from 'react-native';
+import {Paddings} from 'Themes/Metrics';
 import {wp, FontSizeDict} from 'Helpers/Responsive';
 import Colors from 'Themes/Colors';
 
 const styles = StyleSheet.create({
   container: {
-    marginHorizontal: wp(6),
-    marginBottom: wp(6),
+    flex: 1,
+    padding: Paddings.PagePadding,
+    paddingTop: Paddings.Top,
   },
-  textInput: {
-    fontSize: FontSizeDict.font12,
-    color: Colors.text.dark.secondary,
-    paddingBottom: wp(1),
+
+  button: {
+    marginTop: wp(10),
+    backgroundColor: Colors.button.primary,
   },
-  title: {
+  text: {
     fontSize: FontSizeDict.font13,
-    color: Colors.text.dark.primary,
-    paddingBottom: wp(4),
+    color: Colors.black,
   },
 });
-
 export default styles;

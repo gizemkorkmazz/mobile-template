@@ -5,13 +5,14 @@ import styles from './styles';
 import {Flat} from 'Components/Buttons/Flat';
 import Colors from 'Themes/Colors';
 import Bordered from 'Components/TextInput/Bordered';
+import ScreenNames from 'Constants/ScreenNames';
 
-const WithLogoLogin = () => {
+const WithLogoLogin = ({navigation}) => {
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Image source={Images.OmegaLogo} style={styles.image} />
       <Bordered
-        title="Sicil Numarası"
+        title="Sicil / Telefon Numarası"
         placeholder="--- --- -- -- ---"
         iconName="user"
       />
@@ -25,13 +26,17 @@ const WithLogoLogin = () => {
         <Flat
           title="Şifremi Unuttum"
           backgroundColor={Colors.themes.pastel.secondary}
-          onPress={() => {}}
+          onPress={() => {
+            navigation.navigate(ScreenNames.WITH_LOGO_SEND_CONFIRMATION);
+          }}
         />
         <Flat
           title="Üye Ol"
           textColor={Colors.text.dark.thirnary}
           backgroundColor={Colors.themes.pastel.thirnary}
-          onPress={() => {}}
+          onPress={() => {
+            navigation.navigate(ScreenNames.WITH_LOGO_REGISTER);
+          }}
         />
       </View>
     </ScrollView>
