@@ -16,6 +16,7 @@ const Border = {
     card: wp(2),
     circular: wp(30),
     button: wp(1.5),
+    round: wp(50),
   },
   width: wp(0.3),
 };

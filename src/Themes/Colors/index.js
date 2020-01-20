@@ -6,10 +6,44 @@ const Colors = {
     background: 'white',
   },
   linearGradient: {
-    primary: '#f2f4d1',
-    secondary: '#b2d3be',
-    thirnary: '#89a3b2',
-    quaternary: '#393e46',
+    auth: {
+      primary: '#f2f4d1',
+      secondary: '#b2d3be',
+      thirnary: '#89a3b2',
+      quaternary: '#393e46',
+    },
+    blue: {
+      first: '#41a1f9',
+      second: '#50bdfa',
+      third: '#5ccffb',
+    },
+    pink: {
+      first: '#a9008d',
+      second: '#e10073',
+      third: '#f70068',
+    },
+    red: {
+      first: '#bd4234',
+      second: '#d03a28',
+      third: '#e03523',
+    },
+    yellow: {
+      first: '#f9ca3f',
+      second: '#f8d548',
+      third: '#f9da4f',
+    },
+    line: {
+      first: '#a54389',
+      second: '#d03827',
+      third: '#d29334',
+      fourth: '#d7d846',
+      fifth: '#b3d644',
+    },
+    navigation: {
+      first: '#38bcff',
+      second: '#25d7ff',
+      third: '#66d4fa',
+    },
   },
   background: {
     primary: 'white',

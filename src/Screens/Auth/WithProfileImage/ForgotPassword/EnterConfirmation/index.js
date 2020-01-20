@@ -12,10 +12,10 @@ const WithProfileImageEnterConfirmation = ({navigation}) => {
     <LinearGradient
       style={styles.container}
       colors={[
-        Colors.linearGradient.primary,
-        Colors.linearGradient.secondary,
-        Colors.linearGradient.thirnary,
-        Colors.linearGradient.quaternary,
+        Colors.linearGradient.auth.primary,
+        Colors.linearGradient.auth.secondary,
+        Colors.linearGradient.auth.thirnary,
+        Colors.linearGradient.auth.quaternary,
       ]}>
       <Underlined title="Doğrulama Kodu " />
       <Underlined title="Yeni Şifre" />

@@ -27,6 +27,7 @@
     "clean-cache": "watchman watch-del-all && rm -rf node_modules && yarn && rm -rf /tmp/metro-bundler-cache-* && rm -rf /tmp/haste-map-react-native-packager-*"
   },
   "dependencies": {
+    "@crowdlinker/react-native-pager": "^0.2.1",
     "@omegabigdata/apollo-rn-redux-helper": "^1.5.1",
     "react": "16.9.0",
     "react-native": "0.61.2",
